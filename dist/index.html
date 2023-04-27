@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste Log Inteligente</title>
+    <!-- fonts google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./main.min.css" />
+  </head>
+  <body>
+    <div class="color-theme">
+      <input type="radio" name="color-theme" id="light" />
+      <input type="radio" name="color-theme" id="dark" checked />
+    </div>
+    <header class="header-section">
+      <div class="container">
+        <h1>Consulte os dados da Pandemia da COVID-19</h1>
+        <article class="header-section__search">
+          <form action="#">
+            <label for="search">Buscar por países:</label>
+            <div class="search-container">
+              <input
+                type="search"
+                name="search"
+                id="search"
+                autocomplete="off"
+                placeholder="ex:Brazil"
+              />
+            </div>
+            <input id="submit" type="submit" value="" />
+          </form>
+        </article>
+      </div>
+    </header>
+
+    <article class="results-section">
+      <div class="app"></div>
+    </article>
+    <script type="module" src="script.js"></script>
+    <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/map.js"></script>
+  </body>
+</html>

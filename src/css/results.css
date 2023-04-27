@@ -1,0 +1,137 @@
+.results-section__data-by-country {
+  font-size: 1.2em;
+  padding: 3rem;
+}
+
+.results-section__data-by-country h2 {
+  text-transform: uppercase;
+}
+
+.results-section__data-by-country .total {
+  margin-top: 1rem;
+}
+
+.results-section__data-by-country .total h3 {
+  margin-top: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.3s;
+}
+
+.results-section__data-by-country .total h3::before {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  background-color: var(--color-p-1);
+}
+
+.results-section__data-by-country .total h3:hover::before {
+  animation: hover 0.3s forwards linear;
+}
+
+@keyframes hover {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 8px;
+  }
+}
+
+.results-section__data-by-country .total p {
+  display: inline-block;
+  padding: 0.5rem;
+  background-color: var(--color-p-2);
+  filter: brightness(50%);
+  border-radius: var(--gutter);
+  color: var(--color-p-1);
+}
+
+.results-section__filters {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-top: 2px solid var(--color-p-1);
+  border-bottom: 2px solid var(--color-p-1);
+}
+
+.results-section__data-by-country button {
+  margin-top: 2rem;
+  border: none;
+  text-decoration: underline;
+  color: blue;
+  background-color: none;
+  cursor: pointer;
+}
+
+.results-section__data-by-country button:hover {
+  color: rgb(0, 0, 125);
+}
+
+.results-section table {
+  font-size: 1.6rem;
+}
+
+.results-section table {
+  text-align: center;
+  width: 100%;
+  color: black;
+  border-collapse: collapse;
+  margin-bottom: 4rem;
+}
+
+.results-section table :is(thead, tbody) {
+  border: 2px solid black;
+}
+
+.results-section table :is(th, td) {
+  padding: 0.5rem;
+  border: 1px solid black;
+}
+
+.results-section table td {
+  width: 25%;
+}
+
+.results-section table thead {
+  font-size: 1.6rem;
+  color: var(--color-p-2);
+  background-color: var(--color-p-1);
+}
+
+.results-section table tbody tr:nth-child(odd) {
+  background-color: #ddd;
+}
+
+.results-section table + button {
+  cursor: pointer;
+  display: block;
+  width: max-content;
+  margin-bottom: 4rem;
+  background-color: var(--color-p-1);
+  color: var(--color-p-2);
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: var(--gutter);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+[data-compare] {
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-position: right;
+}
+
+[data-compare="equal"] {
+  background-image: url("../img/equal.png");
+}
+
+[data-compare="increased"] {
+  background-image: url("../img/increase.png");
+}
+
+[data-compare="decreased"] {
+  background-image: url("../img/decrease.png");
+}

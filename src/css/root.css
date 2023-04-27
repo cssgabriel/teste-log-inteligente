@@ -1,0 +1,13 @@
+:root {
+  font-size: 62.5%;
+  --gutter: 5px;
+}
+
+:root:has(input#dark:checked) {
+  --color-p-1: #212121;
+  --color-p-2: #f1f1f1;
+}
+:root:has(input#light:checked) {
+  --color-p-1: #e1e1e1;
+  --color-p-2: #313131;
+}

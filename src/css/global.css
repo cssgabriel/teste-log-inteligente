@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+svg {
+  stroke: currentColor;
+}
+
+input,
+label {
+  display: block;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+body * {
+  font-family: inherit;
+}
+
+.container {
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+.app {
+  min-height: 40rem;
+}

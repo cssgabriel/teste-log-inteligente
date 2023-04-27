@@ -1,0 +1,12 @@
+.color-theme {
+  position: absolute;
+  padding: 1rem 1.5rem;
+  right: 10%;
+  width: max-content;
+  aspect-ratio: 1/1;
+  background-color: var(--color-p-2);
+  color: var(--color-p-1);
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+}
